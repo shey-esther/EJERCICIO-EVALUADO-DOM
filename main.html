@@ -5,8 +5,13 @@
 	<title>Document</title>
 	<center><h1>La tabla</h1></center>
 </head>
+<style type="text/css">
+	body{
+		color:black;
+	}
+</style>
 <center>
-<body>
+<body style="background-color: pink">
 <table border="1">
 <tr>
 <TD><div>4</div></TD> 
@@ -28,6 +33,16 @@
 <TD><div>27</div></TD> 
 <TD><div>31</div></TD>  
 </tr> 
+<tr style="background: black">
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+<TD><div>""</div></TD> 
+</tr>
 <tr>
 <TD><div>2</div></TD> 
 <TD><div>6</div></TD> 
@@ -52,12 +67,12 @@
 <p id="mostrar"></p>
 <div>
 	<p>
-		<input type="text" id="eldni"  placeholder="DNI" required="">
-		<button type="buscar" id="buscar"onclick="buscar()">Buscar</button>
+		<input type="text" id="dni1"  placeholder="DNI" required="">
+		<button type="buscar" id="buscar" onclick="buscar()">Buscar</button>
 	</p>
 	<p>
 		<input type="text" id="nombre" placeholder="Nombre" required=""><br>
-		<input type="text" id="apellidos"  placeholder="Apellidos" required=""><br>
+		<input type="text" id="apellidos" placeholder="Apellidos" required=""><br>
 		<input type="text" id="dni" placeholder="DNI" required=""><br><br>
 		<button id="reservar" type="button" onclick="reservar()">Reservar</button>
 		<button id="cancelar" type="button" onclick="cancelar()">Cancelar</button><br><br>
